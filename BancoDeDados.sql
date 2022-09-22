@@ -3,7 +3,7 @@
 CREATE DATABASE ecommerce;
 USE ecommerce;
 
--- TabelaCliente 
+-- TabelaCliente OK
 create TABLE Cliente(
 	idCliente INT AUTO_INCREMENT PRIMARY KEY,
 	TipoPessoa ENUM('Pessoa Juridica', 'Pessoa Física') NOT NULL,
@@ -189,6 +189,8 @@ CREATE TABLE IF NOT EXISTS Pedido (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
+
+SELECT * FROM Pedido;
 
 
 -- PedidoHasProduto ok
